@@ -63,8 +63,7 @@ export default function Footer() {
             Contact Details
           </h3>
           <ul className="space-y-2.5 text-sm text-white/70">
-            <li>6th Floor Landmark Towers,</li>
-            <li>5B Water Corporation Way Oniru,</li>
+            <li>Plot 1610, Adeola Hopewell Street,</li>
             <li>Victoria Island, Lagos</li>
             <li className="pt-1">
               <a href="tel:+23401-4545361" className="hover:text-white transition-colors">

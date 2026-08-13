@@ -18,9 +18,7 @@ export default function Contact() {
             Head office address:
           </h2>
           <p className="text-text-secondary leading-relaxed mb-6">
-            6th Floor Landmark Towers,
-            <br />
-            5B Water Corporation Way Oniru,
+            Plot 1610, Adeola Hopewell Street,
             <br />
             Victoria Island, Lagos.
           </p>
