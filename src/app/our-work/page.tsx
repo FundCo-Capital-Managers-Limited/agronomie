@@ -5,7 +5,11 @@ import PageHero from "@/components/PageHero";
 import GrowCta from "@/components/GrowCta";
 import { PROJECTS } from "@/lib/projects";
 
-export const metadata: Metadata = { title: "Our Work | Agronomie" };
+export const metadata: Metadata = {
+  title: "Our Work",
+  description:
+    "Explore Agronomie's portfolio of agro-productive energy projects across Nigeria's rural communities, from Ondo to Cross River, Plateau, and beyond.",
+};
 
 export default function OurWork() {
   return (

@@ -4,7 +4,11 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import GrowCta from "@/components/GrowCta";
 
-export const metadata: Metadata = { title: "About Us | Agronomie" };
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about Agronomie, the specialised agro-tech company aggregating and accelerating access to finance for agro-productive use of clean energy from solar mini-grids across rural Nigeria.",
+};
 
 const FOCUS_AREAS = [
   {

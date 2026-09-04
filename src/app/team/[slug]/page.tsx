@@ -16,7 +16,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const member = getStaffMember(slug);
-  return { title: member ? `${member.name} | Agronomie` : "Team | Agronomie" };
+  if (!member) return { title: "Team" };
+  return {
+    title: member.name,
+    description:
+      member.bio[0]?.slice(0, 155) ??
+      `${member.name}, ${member.role} at Agronomie.`,
+  };
 }
 
 export default async function StaffDetail({

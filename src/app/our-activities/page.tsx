@@ -3,7 +3,11 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import GrowCta from "@/components/GrowCta";
 
-export const metadata: Metadata = { title: "Our Activities | Agronomie" };
+export const metadata: Metadata = {
+  title: "Our Activities",
+  description:
+    "From accelerated site assessment to portfolio aggregation and the AssetCo model, explore how Agronomie deploys and manages agro-productive energy assets in rural communities.",
+};
 
 const TIMELINE = [
   {

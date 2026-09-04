@@ -3,7 +3,11 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import GrowCta from "@/components/GrowCta";
 
-export const metadata: Metadata = { title: "Our Approach | Agronomie" };
+export const metadata: Metadata = {
+  title: "Our Approach",
+  description:
+    "How Agronomie Funding Limited delivers Productive Use of Energy (PuE) as a service, powering agro-processing equipment through long-term mini-grid partnerships across Nigeria.",
+};
 
 export default function Approach() {
   return (

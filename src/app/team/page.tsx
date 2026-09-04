@@ -5,7 +5,11 @@ import PageHero from "@/components/PageHero";
 import GrowCta from "@/components/GrowCta";
 import { STAFF } from "@/lib/staff";
 
-export const metadata: Metadata = { title: "Our Team | Agronomie" };
+export const metadata: Metadata = {
+  title: "Our Team",
+  description:
+    "Meet the multidisciplinary team of engineers, finance professionals, and agribusiness experts driving Agronomie's mission to expand rural energy access in Nigeria.",
+};
 
 export default function Team() {
   return (

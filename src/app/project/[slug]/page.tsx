@@ -16,7 +16,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const project = getProject(slug);
-  return { title: project ? `${project.title} | Agronomie` : "Project | Agronomie" };
+  if (!project) return { title: "Project" };
+  return {
+    title: project.title,
+    description:
+      project.paragraphs[0]?.slice(0, 155) ??
+      `${project.title}: an Agronomie agro-productive energy project in ${project.location}.`,
+  };
 }
 
 export default async function ProjectDetail({
