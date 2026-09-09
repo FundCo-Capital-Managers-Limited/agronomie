@@ -20,6 +20,7 @@ const NAV: {
   },
   { label: "Our Activities", href: "/our-activities" },
   { label: "Our Work", href: "/our-work" },
+  { label: "Partners", href: "/partners" },
   { label: "Contact", href: "/contact" },
 ];
 

@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import GrowCta from "@/components/GrowCta";
+import LogoMarquee from "@/components/LogoMarquee";
+
+const BACKERS = [
+  { name: "DREEF", src: "/images/partners/dreef-color.svg" },
+  { name: "Clean Energy Local Currency Fund", src: "/images/partners/clean-energy-fund.png", chip: true },
+  { name: "InfraCredit", src: "/images/partners/infracredit.svg" },
+];
 
 const GOALS = [
   { icon: "/uploads/2022/11/tractor-3.png", text: "Enable ease of access to sustainable agro processing equipment in rural communities." },
@@ -102,6 +109,21 @@ export default function Home() {
             className="inline-block rounded-full bg-dark px-6 py-3 text-sm font-semibold text-white hover:bg-brand transition-colors"
           >
             Learn More
+          </Link>
+        </div>
+      </section>
+
+      <section className="border-y border-border bg-white">
+        <div className="mx-auto max-w-6xl px-6 py-12 sm:py-14 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand mb-8">
+            Backed By
+          </p>
+          <LogoMarquee logos={BACKERS} />
+          <Link
+            href="/partners"
+            className="mt-8 inline-block text-sm font-semibold text-navy hover:text-brand transition-colors"
+          >
+            Meet our partners &rarr;
           </Link>
         </div>
       </section>
