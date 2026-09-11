@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import GrowCta from "@/components/GrowCta";
 import LogoMarquee from "@/components/LogoMarquee";
+import ParticleFieldHero from "@/components/ParticleFieldHero";
+import SectorGrid from "@/components/SectorGrid";
 
 const BACKERS = [
   { name: "DREEF", src: "/images/partners/dreef-color.svg" },
@@ -42,7 +44,8 @@ export default function Home() {
           className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand/20 blur-3xl"
           aria-hidden
         />
-        <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-24 md:py-32">
+        <ParticleFieldHero />
+        <div className="relative z-[2] mx-auto max-w-7xl px-6 py-20 sm:py-24 md:py-32">
           <p className="text-sm font-semibold uppercase tracking-widest text-brand mb-4">
             Financing Agro-Tech
           </p>
@@ -211,19 +214,7 @@ export default function Home() {
             impact while also achieving strong risk-adjusted financial
             returns in the following agro market segments:
           </p>
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-5">
-            {SECTORS.map((s) => (
-              <div
-                key={s.label}
-                className="flex flex-col items-center gap-3 rounded-2xl bg-white/5 p-6 hover:bg-brand transition-colors duration-300"
-              >
-                <Image src={s.icon} alt={s.label} width={40} height={40} />
-                <span className="text-xs font-semibold uppercase tracking-wide">
-                  {s.label}
-                </span>
-              </div>
-            ))}
-          </div>
+          <SectorGrid sectors={SECTORS} />
         </div>
       </section>
 

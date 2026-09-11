@@ -28,7 +28,7 @@ export default function LogoMarquee({ logos }: { logos: MarqueeLogo[] }) {
               alt={logo.name}
               width={160}
               height={64}
-              className="h-full w-auto max-w-full object-contain"
+              className="h-full w-auto max-w-full object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
             />
           </div>
         ))}
